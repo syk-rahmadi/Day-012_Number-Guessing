@@ -13,15 +13,15 @@ def turns():
         return HARD_LEVEL_TURNS
 
 #Function to check user's guess against actual answer.
-def check_answer(guess, answer, turns):
-    if guess > answer:
+def check_answer(player_guess, computer_answer, turns):
+    if player_guess > computer_answer:
         print("Too high.")
         return turns - 1
-    elif guess < answer:
+    elif player_guess < computer_answer:
         print("Too low.")
         return turns - 1
     else:
-        print(f"You got it! The answer was {answer}.")
+        print(f"You got it! The answer was {computer_answer}.")
 
 #Function to run the game.
 def game():
